@@ -1,1 +1,2 @@
-# whats-the-weather
+# What's the Weather?
+## Task = create an interactive weather app.
