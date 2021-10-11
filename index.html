@@ -8,25 +8,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>What's the Weather?</title>
 </head>
 
-<body class="flex-column min-100-vh">
+<body class="body">
   <header class="hero">
     <h1 class="">What's the Weather?</h1>
   </header>
-
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-      <div class="card">
-        <h2 class="card-header">Search for a City:</h2>
-        <form id="user-form" class="card-body">
-          <input name="city" id="city" type="text" autofocus="true" class="form-input" placeholder="enter city name here"/>
-          <button type="submit" class="btn">Get Weather</button>
-        </form>
+  <main>
+    <div class="grid-x grid-padding-x">
+      <form name="user-form" id="user-form" class="form small-3 cell">
+        <input name="city" id="city" type="text" autofocus="true" class="form-input"
+          placeholder="enter city name here" />
+        <button id="submitBtn" type="submit" class="btn">Get Weather</button>
+      </form>
+      <div class=" small-9 cell" id="current-forcast">
       </div>
+    </div>
+    <div>
+      <div class="main grid-x">
+        <div id="cities" class="cities small-3 cell">
+        </div>
+        <div id="fiveDay" class="fiveDay small-2 cell">
+      
+        </div>
+      </div>
+    </div>
   </main>
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
